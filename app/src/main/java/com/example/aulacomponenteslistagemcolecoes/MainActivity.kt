@@ -26,15 +26,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-/*        val intent = Intent(this, MainActivity::class.java)
+        /*        val intent = Intent(this, MainActivity::class.java)
 
-        val usuario: Usuario = UsuarioDoJamilton()
-        intent.putExtra("usuario", usuario)
+                val usuario: Usuario = UsuarioDoJamilton()
+                intent.putExtra("usuario", usuario)
 
-        startActivity(intent)*/
+                startActivity(intent)*/
 
-        btnExecutar = findViewById( R.id.btn_executar )
-        textResultado = findViewById( R.id.text_resultado )
+        btnExecutar = findViewById(R.id.btn_executar)
+        textResultado = findViewById(R.id.text_resultado)
 
         /*btnExecutar.setOnClickListener { botao ->
             textResultado.text = "Jamilton Damasceno"
@@ -42,14 +42,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun cliqueBotao( view: View ){
+    fun cliqueBotao(view: View) {
 
         Toast.makeText(
             this,
             "Sucesso ao fazer algo",
             Toast.LENGTH_LONG
         ).show()
-
 
         textResultado.text = "Jamilton Damasceno"
     }
